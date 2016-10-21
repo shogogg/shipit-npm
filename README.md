@@ -44,6 +44,13 @@ Default: `true`
 
 A Boolean to determine whether to run the task in local workspace or on the remote.
 
+### `npm.installCommand`
+
+Type: `String`
+Default: `npm install`
+
+A String that specifying install command (e.g. [yarnpkg](https://yarnpkg.com/)).
+
 ### `npm.installArgs`
 
 Type: `Array` or `String`

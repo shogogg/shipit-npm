@@ -15,6 +15,7 @@ module.exports = function (gruntOrShipit) {
     shipit.currentPath = shipit.config.deployTo ? path.join(shipit.config.deployTo, 'current') : undefined;
     shipit.config.npm = shipit.config.npm || {};
     shipit.config.npm.remote = shipit.config.npm.remote !== false;
+    shipit.config.npm.installCommand = shipit.config.npm.installCommand || 'npm install';
     shipit.config.npm.installArgs = shipit.config.npm.installArgs || [];
     shipit.config.npm.installFlags = shipit.config.npm.installFlags || [];
 

@@ -31,7 +31,7 @@ module.exports = function (gruntOrShipit) {
       var AF = args ? flags ? args.concat(' ',flags) : args : flags ? flags : '';
 
       return shipit[method](
-        sprintf('node -v && cd %s && npm i %s', cdPath, AF)
+        sprintf('node -v && cd %s && %s %s', cdPath, shipit.config.npm.installCommand, AF)
       );
 
     }
